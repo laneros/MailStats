@@ -22,10 +22,9 @@ class Setup extends AbstractSetup
 			$table->addColumn('date', 'int');
 			$table->addColumn('email', 'varchar', 120);
 			$table->addColumn('subject', 'varchar', 500);
-			$table->addColumn('report', 'enum')->values([
-				'pass', 'fail'
-			])->setDefault('pass');
-			$table->addColumn('message', 'text')->nullable();
+			$table->addColumn('headers', 'text')->nullable();
+			$table->addColumn('message_text', 'text')->nullable();
+			$table->addColumn('message_html', 'text')->nullable();
 			$table->addColumn('error_message', 'text')->nullable();
 		});
 	}
