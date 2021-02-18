@@ -1,0 +1,5 @@
+{
+    "content_type": "mail_stats",
+    "field_name": "stats_handler_class",
+    "field_value": "Laneros\\MailStats\\Stats\\Email"
+}

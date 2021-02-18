@@ -24,7 +24,7 @@ class Setup extends AbstractSetup
 			$table->addColumn('subject', 'varchar', 500);
 			$table->addColumn('headers', 'text')->nullable();
 			$table->addColumn('message_text', 'text')->nullable();
-			$table->addColumn('message_html', 'text')->nullable();
+			$table->addColumn('message_html', 'mediumtext')->nullable();
 			$table->addColumn('error_message', 'text')->nullable();
 		});
 	}
